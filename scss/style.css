@@ -285,7 +285,7 @@ header .container nav .form i:hover {
 .landing {
   position: relative;
   min-height: 100vh;
-  background-image: url("/template_html_css_2021/images/land.jpg");
+  background-image: url("/images/land.jpg");
   background-size: cover;
   background-repeat: no-repeat;
 }
