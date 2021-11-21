@@ -511,7 +511,7 @@ header .container nav .form i:hover {
   padding-top: 2rem;
   padding-bottom: 2rem;
   position: relative;
-  background-image: url("/template_html_css_2021/images/design-features.jpg");
+  background-image: url("/images/design-features.jpg");
   background-size: cover;
   height: 600px;
   max-height: 100%;
@@ -803,7 +803,7 @@ header .container nav .form i:hover {
   padding-bottom: 2rem;
   position: relative;
   text-align: center;
-  background-image: url("/template_html_css_2021/images/stats.png");
+  background-image: url("/images/stats.png");
   background-size: cover;
   background-repeat: no-repeat;
   height: 100%;
@@ -1072,7 +1072,7 @@ header .container nav .form i:hover {
   padding-top: 10rem;
   padding-bottom: 10rem;
   position: relative;
-  background-image: url("/template_html_css_2021/images/quote.jpg");
+  background-image: url("/images/quote.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -1263,7 +1263,7 @@ header .container nav .form i:hover {
   position: relative;
   padding-top: 5rem;
   padding-bottom: 3rem;
-  background-image: url("/template_html_css_2021/images/subscribe.jpg");
+  background-image: url("/images/subscribe.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
