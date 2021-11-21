@@ -1,0 +1,14 @@
+.about{
+  padding-top: $main-padding;
+  overflow: hidden;
+  img{
+    max-width:100%;
+    position:relative;
+    bottom:-120px;
+    margin-top: -120px;
+    @media (max-width:$sm) {
+      bottom: -60px;
+      margin-top: -60px;
+    }
+  }
+}

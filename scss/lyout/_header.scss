@@ -1,0 +1,102 @@
+// start header style
+header {
+  position: absolute;
+  width: 100%;
+  z-index: 1000;
+  left: 0;
+  .container {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 97px;
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 15px;
+      height: 0.5px;
+      width: calc(100% - #{$padding-body});
+      background-color: $white-color;
+    }
+    .logo {
+      img {
+        height: 50px;
+      }
+    }
+    nav {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      .nav-toogle {
+        font-size: 20px;
+        padding: 0.5rem;
+        @media (min-width: $md) {
+          display: none;
+        }
+      }
+      ul {
+        @media (max-width: $md) {
+          display: none ;
+          flex-direction: column;
+          position: absolute;
+          top: 100%;
+          left: 0;
+          width: 100%;
+          margin-top: 2rem;
+          background-color: rgba(0, 0, 0, 0.78);
+          .show{
+            display: flex !important;
+          }
+          li {
+            a {
+              padding: 15px !important;
+              text-align: center;
+              font-size: 1.5rem !important;
+              &.active,
+              &:hover {
+                border-bottom: none !important;
+              }
+            }
+          }
+        }
+        display: flex;
+        li {
+          a {
+            position: relative;
+            display: block;
+            padding: 40px 10px;
+            font-size: 1rem;
+            color: $white-color;
+            transition: 0.35s;
+            z-index: 1000;
+            &.active,
+            &:hover {
+              color: $primary-color;
+              border-bottom: 1.5px solid $primary-color;
+            }
+          }
+        }
+      }
+      .form {
+        position: relative;
+        width: 40px;
+        height: 30px;
+        border-left: 1px solid $white-color;
+        margin-left: 15px;
+        i {
+          font-size: 20px;
+          color: WHITE;
+          position: absolute;
+          top: 50%;
+          transform: translate(-50%, -50%);
+          right: 0;
+          transition: 0.5s;
+          &:hover {
+            color: $primary-color;
+          }
+        }
+      }
+    }
+  }
+}

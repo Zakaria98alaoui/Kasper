@@ -1,0 +1,81 @@
+.portfolio {
+  padding-top: $main-padding;
+  padding-bottom: $main-padding;
+  .shuffle {
+    margin-top: 5rem;
+    display: flex;
+    justify-content: center;
+    li {
+      font-size: 1.2rem;
+      text-transform: capitalize;
+      font-weight: normal;
+      padding: 1rem;
+      color: $light-color;
+      transition: 0.3s ease;
+      cursor: pointer;
+      &:hover {
+        background-color: $secondary-colo-light;
+      }
+    }
+    .active {
+      background-color: $secondary-colo-light;
+      color: $white-color;
+    }
+  }
+  // image container
+  .image-container {
+    margin-top: 5rem;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+    .box-image {
+      position: relative;
+      overflow: hidden;
+      cursor: pointer;
+      @media (min-width: $md) {
+        flex-basis: 50%;
+      }
+
+      @media (min-width: $xl) {
+        flex-basis: 25%;
+      }
+
+      img {
+        max-width: 100%;
+        transition: 0.5s ease;
+      }
+      &:hover {
+        .caption {
+          bottom: 0;
+        }
+        img {
+          transform: rotate(3deg) scale(1.2);
+        }
+      }
+      .caption {
+        position: absolute;
+        left: 0;
+        bottom: -100%;
+        width: 100%;
+        padding: 1.1rem;
+        transition: 0.5s ease;
+        background-color: $white-color;
+        h3 {
+          text-transform: capitalize;
+          margin-bottom: 1rem;
+          font-size: 1.2rem;
+          letter-spacing: 2px;
+        }
+        p {
+          font-size: 1.1rem;
+          text-transform: lowercase;
+          color: $secondary-colo-light;
+        }
+      }
+    }
+  }
+  .btn{
+    margin: 2rem auto 3rem;
+    text-align: center;
+  }
+}

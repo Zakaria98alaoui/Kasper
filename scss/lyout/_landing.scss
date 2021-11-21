@@ -1,0 +1,106 @@
+.landing{
+  position: relative;
+  min-height: 100vh;
+  background-image: url("/template_html_css_2021/images/land.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  .overlay{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.45);
+    z-index: 1;
+    
+  }
+  .text {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    width: 50%;
+    color: $white-color;
+    padding: 4rem;
+    display: flex;
+    justify-content: flex-end;
+    background-color: $primary-color;
+    z-index: 100;
+     @media (max-width:$md) {
+       width: 100%;
+       padding: 4rem 2rem;
+     }
+    .content {
+      max-width: 400px;
+       @media (max-width:$md) {
+         max-width: 100%;
+       }
+      h2{
+        font-size: 1.8rem;
+        font-weight: 600;
+        text-transform: capitalize;
+        line-height: 1.6;
+        margin-bottom: 1rem;
+        @media (max-width:$md) {
+          font-size: 1.4;
+        }
+
+      }
+      p{
+        font-size: 1rem;
+        line-height: 1.6;
+        word-spacing: 3px;
+        text-transform: lowercase;
+        @media (max-width:$md) {
+          font-size: .8rem;
+        }
+      }
+    }
+  }
+  // start pullets
+  .change-background{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1000;
+    color: $white-color;
+    font-size: 2.5rem;
+    transition: .6s ease;
+    cursor: pointer;
+     @media (max-width:$md) {
+       display: none !important;
+     }
+    &:hover{
+      color: $black-white-color;
+      font-size: 3rem;
+    }
+  }
+   .fa-chevron-left {
+     left: 2rem;
+   }
+
+   .fa-chevron-right {
+     right: 2rem;
+   }
+  .pullets{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    width: 80px;
+    li{
+      width: 20px;
+      height: 20px;
+      border: 1px solid $white-color;
+      border-radius: 50%;
+      cursor: pointer;
+    }
+    .active {
+      background-color: $secondary-colo-light;
+    }
+  }
+  // end pullets
+  
+}

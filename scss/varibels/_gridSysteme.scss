@@ -1,0 +1,42 @@
+// reset
+*,::before,::after{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html{
+  scroll-behavior: smooth;
+}
+body{
+  // height: 100%;
+  font-family: $primary-font;
+}
+ul{
+  list-style: none;
+}
+a{
+  text-decoration: none;
+}
+.container{
+  padding-left: $padding-body/2;
+  padding-right: $padding-body/2;
+  margin-right: auto;
+  margin-left: auto;
+  width: 100%;
+  @media (min-width : 576px) {
+    width: $sm;
+  }
+  @media (min-width:768px) {
+    width: $md;
+  }
+  @media (min-width:962px) {
+    width: $lg;
+  }
+  @media (min-width:1200px) {
+    width: $xl;
+  }
+  @media (min-width :1440) {
+    width: $xxl;
+  }
+}
+

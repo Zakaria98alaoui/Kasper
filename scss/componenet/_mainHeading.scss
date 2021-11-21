@@ -1,0 +1,48 @@
+.main-heading {
+  text-align: center;
+
+  h2 {
+    position: relative;
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: normal;
+    margin-bottom: 4.5rem;
+
+    &::before {
+      content: '';
+      position: absolute;
+      bottom: -30px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 130px;
+      height: 2px;
+      background-color: $black;
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: -36px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 15px;
+      height: 15px;
+      border: 2px solid $black;
+      border-radius: 50%;
+
+    }
+  }
+
+  p {
+    font-size: 1rem;
+    word-spacing: 3px;
+    line-height: 1.6;
+    text-transform: lowercase;
+    text-align: center;
+    color: $light-color;
+    width: 500px;
+    max-width: 100%;
+    margin: 0 auto 2rem;
+  }
+}

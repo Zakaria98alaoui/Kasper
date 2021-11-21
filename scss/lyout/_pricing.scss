@@ -1,0 +1,110 @@
+.pricing {
+  margin-top: 5rem;
+  margin-bottom: 1rem;
+  .plans {
+    margin-top: 5rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 2rem;
+    .plan {
+      text-align: center;
+      background-color: #fcfcfc;
+      // padding: 2rem;
+      .plan-price {
+        padding: 1.5rem 0;
+        border-top: solid 1px $secondary-colo-light;
+        border-bottom: solid 1px $secondary-colo-light;
+        margin-bottom: 1.5rem;
+        h4 {
+          font-size: 1.1rem;
+          font-weight: normal;
+          text-transform: uppercase;
+          margin-bottom: 1.4rem;
+        }
+        span {
+          font-size: 4rem;
+          font-weight: bold;
+          &::before {
+            content: "$";
+            position: relative;
+            top: -25px;
+            left: -20px;
+            font-size: 2rem;
+            font-weight: normal;
+          }
+          &::after {
+            content: "/mo";
+            font-size: 2rem;
+            position: relative;
+            bottom: 0;
+            right: -10px;
+          }
+        }
+      }
+      .features {
+        border-bottom: solid 1px $secondary-colo-light;
+        width: 100%;
+        li {
+          position: relative;
+          font-size: 1.1rem;
+          text-transform: capitalize;
+          padding: 1.5rem 1rem;
+          &:not(:last-child)::after {
+            content: "";
+            position: absolute;
+            background-color: $secondary-colo-light;
+            height: 1px;
+            width: 140px;
+            bottom: 0px;
+            left: 50%;
+            transform: translateX(-50%);
+          }
+        }
+      }
+      .foter {
+        margin-top: 2rem;
+        padding: 1.5rem 1rem 2.8rem;
+        a {
+          padding: 1rem;
+          border: solid 2px $secondary-colo-light;
+          font-weight: normal;
+          text-transform: capitalize;
+          border-radius: 0.5rem;
+          transition: 0.5s ease-in-out;
+          cursor: pointer;
+          &:hover {
+            background-color: $secondary-colo-light;
+            color: $white-color;
+          }
+        }
+      }
+    }
+  }
+  .contact-us {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    text-align: center;
+    p {
+      font-size: 1.5rem;
+      font-weight: normal;
+      text-transform: capitalize;
+      color: $light-color;
+    }
+    a {
+      display: inline-block;
+      font-size: 1.2rem;
+      font-weight: normal;
+      text-transform: capitalize;
+      background-color: $secondary-colo-light;
+      color: $white-color;
+      border-radius: 0.5rem;
+      padding: 1rem 2rem;
+      margin-top: 1.2rem;
+      transition: 0.5s ease-in-out;
+      cursor: pointer;
+      &:hover {
+        background-color: $black;
+      }
+    }
+  }
+}

@@ -1,0 +1,56 @@
+// start services
+.services {
+  padding-top: 5.5rem;
+  padding-bottom: 5.5rem;
+  .box-container {
+    margin-top: 5rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    column-gap: 3rem;
+    row-gap: 3.5rem;
+    .box-serv {
+      display: flex;
+      justify-content: space-between;
+      @media (max-width:$md) {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+      }
+      i {
+        margin-right: 1.5rem;
+        font-size: 3rem;
+        transition: .3s ease-in-out;
+        &:hover{
+          color:$primary-color;
+        };
+        @media (max-width:$md) {
+          font-size: 5rem;
+          margin-bottom: 1.5rem;
+          margin-right: 0 !important;
+        }
+      }
+      .text {
+        h2 {
+          font-size: 1.5rem;
+          text-transform: capitalize;
+          padding-bottom: 1.5rem;
+          color: $primary-color;
+          letter-spacing: 2px;
+          @media (max-width:$md) {
+            font-size: 1.8rem;
+          }
+        }
+        p {
+          font-size:1rem;
+          text-transform: lowercase;
+          line-height: 1.6;
+          word-spacing: 3px;
+          @media (max-width:$md) {
+            font-size: 1.1rem;
+          }
+        }
+      }
+    }
+  }
+}
+// end services

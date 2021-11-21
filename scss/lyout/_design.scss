@@ -1,0 +1,86 @@
+.design {
+  margin-bottom: 3rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  position: relative;
+  background-image: url("/template_html_css_2021/images/design-features.jpg");
+  background-size: cover;
+  height: 600px;
+  max-height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  overflow: hidden;
+  @media (max-width: $md) {
+    flex-direction: column;
+    height: 100%;
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  .image {
+    text-align: center !important;
+    z-index: 1000;
+    img {
+      position: relative;
+      bottom: -150px;
+      @media (max-width: $md) {
+        bottom: 10px;
+      }
+    }
+  }
+
+  .design-content {
+    margin-left: 5rem;
+    width: 55%;
+    position: relative;
+    padding: 4.5rem;
+    color: $white-color;
+    background-color: $primary-color;
+    z-index: 1000;
+    @media (max-width: $md) {
+      width: 100%;
+      padding: 3rem;
+    }
+    h2 {
+      font-size: 1.5rem;
+      text-transform: uppercase;
+      font-weight: bold;
+      letter-spacing: 2px;
+      margin-bottom: 3rem;
+      @media (max-width: $md) {
+        margin-bottom: 1.5rem;
+      }
+    }
+
+    .design-types {
+      li {
+        padding: 0.8rem;
+        i {
+          font-size: 1.5rem;
+          margin-right: .6rem;
+          position: relative;
+          top: 5px;
+          transition: 0.5s ease;
+          &:hover {
+            color: $black;
+          }
+        }
+
+        span {
+          display: inline-block;
+          font-size: 1rem;
+          @media (max-width: $md) {
+            font-size: 0.9rem;
+          }
+        }
+      }
+    }
+  }
+}

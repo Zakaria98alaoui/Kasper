@@ -1,0 +1,80 @@
+.subscribe{
+  position: relative;
+  padding-top: 5rem;
+  padding-bottom: 3rem;
+  background-image: url("/template_html_css_2021/images/subscribe.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100%;
+  color: $white-color;
+  &::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba($black, .5);
+  }
+  .container{
+    z-index: 1000;
+    position: relative;
+    display: flex;
+    @media (max-width:$md) {
+      flex-direction: column;
+    }
+    form{
+      display: flex;
+      width: 650px;
+      max-width: 100%;
+      position: relative;
+      margin-bottom: 2rem;
+      i{
+        position: absolute;
+        top: 50%;
+        left: 23px;
+        transform: translateY(-50%);
+        font-size: 2rem;
+      }
+      input[type="email"]{
+        font-size: 1rem;
+        border: solid 1px $white-color ;
+        background-color: transparent;
+        padding: 1.2rem 1.2rem 1.2rem 4rem;
+        width: calc(100%-$width-sub);
+        border-right: none;
+        color: $white-color;
+        -webkit-caret-color: $secondary-colo-light;
+        -moz-caret-color: $secondary-colo-light;
+        -o-caret-color: $secondary-colo-light;
+        caret-color: $secondary-colo-light;
+        width: 100%;
+        &:focus{
+          outline: none;
+        }
+      }
+      input[type="submit"] {
+        width: $width-sub;
+        background: none;
+        border: solid 1px $white-color;
+        background-color: $secondary-colo-light;
+        color: $white-color;
+        border-left: none;
+        cursor: pointer;
+        &:focus {
+          outline: none;
+        }
+      }
+    }
+    .email-content{
+      line-height: 2;
+      margin-left: 2rem;
+      @media (max-width:$md) {
+        text-align: center;
+        margin-left: 0;
+      }
+    }
+  }
+  
+}

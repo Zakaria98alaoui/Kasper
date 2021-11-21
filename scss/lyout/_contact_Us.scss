@@ -1,0 +1,95 @@
+.contact-us{
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  overflow: hidden;
+  .container{
+    .contact{
+      margin-top: 5rem;
+      display: flex;
+      // flex-wrap: wrap;
+      justify-content: space-between;
+      width: 1100px;
+      max-width: 100%;
+      @media (max-width:$md) {
+        flex-direction: column;
+      }
+      form {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        flex-basis: 70%;
+         @media (max-width:$md) {
+           order: 1;
+         }
+        input[type="text"],
+        input[type="email"],
+        textarea {
+          padding: 1rem 1.5rem;
+          margin-bottom: 2rem;
+          font-size: 1.1rem;
+          border: solid 1px $primary-color;
+          color: $black;
+          &:focus{
+            outline: none;
+          }
+          &::placeholder{
+            color: $light-color;
+            font-size: 1rem;
+            font-weight: normal;
+            text-transform: capitalize;
+          }
+        }
+        textarea{
+          height: 200px;
+          max-height: 100%;
+          &:focus {
+            outline: none;
+          }
+        }
+        input[type="submit"]{
+          width: fit-content;
+          display: flex;
+          margin-left: auto;
+          padding: 1rem 2rem;
+          color: $white-color;
+          background-color: $secondary-colo-light;
+          border: none;
+        }
+        
+      }
+
+      .adresses {
+        flex-basis: 25%;
+        @media (max-width:$md) {
+          order: 0;
+          text-align: center;
+          margin-bottom: 2rem;
+        }
+        .phone,
+        .adress{
+            h4 {
+              font-size: 1.2rem;
+              font-weight: 400;
+              text-transform: uppercase;
+              margin-bottom: 1.8rem;
+            }
+
+            p {
+              font-size: 1rem;
+              font-weight: normal;
+              text-transform: capitalize;
+              word-spacing: 3px;
+              color: $light-color;
+              margin-bottom: .5rem;
+            }
+        }
+        .phone{
+          margin-bottom: 5.8rem;
+          @media (max-width:$md) {
+            margin-bottom: 3rem;
+          }
+        }
+      }
+    }
+  }
+}
